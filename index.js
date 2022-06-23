@@ -41,8 +41,8 @@ passport.deserializeUser((user, done) => {
 });
 
 passport.use(new YandexStrategy({
-    clientID: '474575c9521b4f139690e7fbc0b59e0c',
-    clientSecret: 'cd2a73b7b75146099c5abe33605b0d0e',
+    clientID: '',
+    clientSecret: '',
     callbackURL: "http://localhost:8081/auth/yandex/callback"
   },
   (accessToken, refreshToken, profile, done) => {
@@ -54,8 +54,8 @@ passport.use(new YandexStrategy({
 ));
 
 passport.use(new GoogleStrategy({
-    clientID: '385681437373-iiin0na5gdvodarl9j5g5g9r0ri3ppvv.apps.googleusercontent.com',
-    clientSecret: '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',
+    clientID: '',
+    clientSecret: '',
     callbackURL: "http://localhost:8081/google/callback",
     passReqToCallback: true
   },
